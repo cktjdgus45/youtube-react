@@ -4,6 +4,7 @@ import styles from './video_detail.module.css';
 const VideoDetail = ({ video, video: { snippet } }) => (
     <section className={styles.detail}>
         <iframe
+            title={`${video.snippet.title}`}
             className={styles.video}
             type="text/html"
             width="100%"
