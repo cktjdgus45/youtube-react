@@ -12,7 +12,9 @@ function App({ youtube }) {
   const search = query => {
     youtube //
       .search(query)
-      .then(videos => setVideos(videos));
+      .then(videos => {
+        setVideos(videos);
+      });
   }
 
   const selectVideo = video => {
@@ -23,7 +25,7 @@ function App({ youtube }) {
     youtube //
       .mostPopular()
       .then(videos => setVideos(videos));
-  }, [])
+  }, [youtube])
   return (
     <div className={styles.app}>
       <SearchHeader onSearch={search}></SearchHeader>
