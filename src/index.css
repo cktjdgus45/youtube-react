@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
 }
 
 code {
@@ -16,7 +18,4 @@ code {
   box-sizing: border-box;
 }
 
-#root{
-  display: flex;
-  justify-content: center;
-}
+
